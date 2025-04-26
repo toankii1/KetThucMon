@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import SearchBar from "./SearchBar";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(null);
@@ -34,7 +35,7 @@ const Navbar = () => {
     },
     {
       title: "TUYỂN SINH",
-      submenu: ["Tuyen Sinh Dai Hoc", "Tuyen sinh chuong trinh lien ket" , "Tuyen sinh trinh do thac si-tien si"],
+      submenu: ["Tuyen Sinh Dai Hoc", "Tuyen sinh chuong trinh lien ket", "Tuyen sinh trinh do thac si-tien si"],
     },
     { title: "NGHIÊN CỨU" },
     { title: "SINH VIÊN" },
@@ -76,13 +77,9 @@ const Navbar = () => {
           </div>
         ))}
 
-        {/* Ô tìm kiếm */}
-        <div className="ml-auto flex items-center px-4">
-          <input
-            type="text"
-            placeholder="Tìm kiếm..."
-            className="border rounded px-2 py-1 text-sm"
-          />
+        {/* Replace the previous search input with the SearchBar component */}
+        <div className="ml-auto flex items-center">
+          <SearchBar />
         </div>
       </div>
     </nav>
