@@ -2,7 +2,7 @@ import React from "react";
 import Topbar from "./components/Topbar";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import SearchBar from "./components/SearchBar";
+import Banner from "./components/Banner";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Topbar />
       <Header />
       < Navbar />
-   
+      <Banner />
     </div>
   );
 }

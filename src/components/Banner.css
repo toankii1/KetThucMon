@@ -1,0 +1,38 @@
+.banner-container {
+    width: 100%;
+    /* Kéo dài container theo chiều rộng màn hình */
+    overflow: hidden;
+    /* Ẩn phần ảnh có thể tràn ra ngoài nếu cần */
+    position: relative;
+    /* Để định vị tuyệt đối cho các nút điều khiển nếu cần */
+}
+
+.banner-image {
+    display: block;
+    /* Loại bỏ khoảng trắng thừa dưới ảnh */
+    width: 100%;
+    /* Kéo dài ảnh theo chiều rộng container */
+    height: auto;
+    /* Duy trì tỷ lệ khung hình của ảnh */
+}
+
+.banner-controls {
+    /* Thêm kiểu dáng cho các nút điều khiển (tùy chọn) */
+    position: absolute;
+    /* Để đặt nút lên trên ảnh nếu muốn */
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-controls button {
+    /* Thêm kiểu dáng cho nút (tùy chọn) */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
