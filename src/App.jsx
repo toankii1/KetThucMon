@@ -1,9 +1,14 @@
+import React from "react";
 import Topbar from "./components/Topbar";
+import Header from "./components/Header";
 
-export default function HomePage() {
+function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="w-full min-h-screen bg-gray-100">
       <Topbar />
+      
     </div>
   );
 }
+
+export default App;

@@ -19,10 +19,10 @@ const Topbar = () => {
 
           {/* Flags */}
           <a href="#" className="flex items-center gap-1">
-            <img src="./img/vn.jpg" alt="VN" className="w-5 h-5" />
+            <img src="/vn.png" alt="VN" className="w-5 h-5" />
           </a>
           <a href="#" className="flex items-center gap-1">
-            <img src="./img/my.jpg" alt="EN" className="w-5 h-5" />
+            <img src="/my.png" alt="EN" className="w-5 h-5" />
           </a>
         </div>
       </div>
