@@ -1,0 +1,73 @@
+.branches-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+}
+
+.branch-block,
+.video-block {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    flex: 1;
+    min-width: 300px;
+    /* Điều chỉnh độ rộng tối thiểu */
+    text-align: center;
+}
+
+.branch-block h3,
+.video-block h3 {
+    margin-top: 0;
+    color: #003366;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.branch-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.video-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.video-header .view-all {
+    text-decoration: none;
+    color: #cc0000;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.video-item {
+    position: relative;
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
 import Sidebar from "./components/Sidebar";
+import Announcements from "./components/Announcements";
+import Branches from "./components/Branches";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       < Navbar />
       <Banner />
       <Sidebar />
+      <Announcements />
+      <Branches />
     </div>
   );
 }

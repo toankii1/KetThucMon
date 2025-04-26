@@ -1,0 +1,110 @@
+.announcements-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+}
+
+.announcement-block,
+.news-events-block,
+.international-cooperation-block {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    flex: 1;
+    min-width: 300px;
+    /* Điều chỉnh độ rộng tối thiểu */
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.announcement-header h3 {
+    margin: 0;
+    font-size: 1.1em;
+    color: #003366;
+}
+
+.announcement-header .view-all {
+    text-decoration: none;
+    color: #cc0000;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.announcement-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.announcement-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+    color: #555;
+}
+
+.announcement-list li:last-child {
+    border-bottom: none;
+}
+
+.announcement-list li .bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #cc0000;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.announcement-list li .date {
+    color: #777;
+    font-size: 0.85em;
+    margin-left: auto;
+}
+
+.announcement-list li .new-badge {
+    background-color: #ff6600;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 0.7em;
+    margin-left: 5px;
+}
+
+.news-event-item,
+.international-cooperation-item {
+    margin-bottom: 15px;
+}
+
+.news-event-item img,
+.international-cooperation-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.news-event-item p,
+.international-cooperation-item p {
+    font-size: 0.95em;
+    color: #333;
+    line-height: 1.4;
+}
+
+.news-event-item .date,
+.international-cooperation-item .date {
+    color: #777;
+    font-size: 0.85em;
+    display: block;
+    margin-top: 5px;
+}
