@@ -1,0 +1,85 @@
+.sidebar {
+    width: 250px;
+    /* Điều chỉnh độ rộng tùy ý */
+    background-color: #f0f0f0;
+    /* Màu nền của sidebar */
+    padding: 20px;
+}
+
+.sidebar-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #003366;
+    /* Màu tiêu đề */
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar-item:last-child {
+    border-bottom: none;
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    /* Thêm con trỏ chuột để chỉ ra có thể click */
+}
+
+.menu-item-header a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    /* Để phần tử a chiếm toàn bộ chiều rộng */
+    flex-grow: 1;
+    /* Cho phép a chiếm không gian còn lại */
+}
+
+.sidebar-item.active .menu-item-header a {
+    font-weight: bold;
+    color: #cc0000;
+    /* Màu cho mục đang được chọn (nếu có) */
+}
+
+.arrow-icon {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.sub-menu {
+    list-style: none;
+    padding-left: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.sub-menu-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.sub-menu-item:last-child {
+    border-bottom: none;
+}
+
+.sub-menu-item a {
+    text-decoration: none;
+    color: #555;
+    display: block;
+}
+
+.sub-menu-item a:hover {
+    color: #007bff;
+    /* Màu khi hover vào mục con */
+}
